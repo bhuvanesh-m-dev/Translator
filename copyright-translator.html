@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flaticon/1.0.0/flaticon.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <style>
+
+     /* Floating LinkedIn and YouTube Buttons */
+     .linkedin-float, .youtube-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 10px 20px;
+      font-size: 20px;
+      color: white;
+      z-index: 1000;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s;
+    }
+
+    /* LinkedIn Button */
+    .linkedin-float {
+      background-color: #0077b5; /* LinkedIn blue */
+      border-radius: 5px; /* Boxy design */
+      right: 20px; /* Spacing from right */
+    }
+
+    .linkedin-float:hover {
+      background-color: #005582;
+    }
+
+    /* YouTube Button */
+    .youtube-float {
+      background-color: #FF0000; /* YouTube red */
+      border-radius: 5px; /* Boxy design */
+      right: 120px; /* Spacing from LinkedIn button */
+    }
+
+    .youtube-float:hover {
+      background-color: #cc0000;
+    }
+
+    /* Icon Size Adjustments */
+    .linkedin-float i, .youtube-float i {
+      font-size: 24px; /* Adjust the size of the icons */
+    }
+
+    /* Upward Floating Button */
+    .upward-float {
+      position: fixed;
+      bottom: 10px;
+      right: 20px;
+      background-color: #000;
+      color: white;
+      padding: 10px;
+      border-radius: 10%;
+      font-size: 25px;
+      z-index: 1000;
+      text-align: center;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    .upward-float:hover {
+      background-color: #333;
+    }
+
+    .upward-float i, .linkedin-float i {
+      line-height: 1;
+    }
+
+    /* Navbar Styling */
+    .navbar-nav {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+    }
+
+    .navbar-nav li {
+      display: inline;
+      margin-left: 20px;
+    }
+
+    .navbar-nav li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    /* Smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Center the About Me section */
+    .about__container--narrow {
+      text-align: center;
+    }
+
+    /* Center Award Section */
+    .service .container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .service .thumbnail {
+      text-align: center;
+      margin: 10px;
+    }
+
+    /* Header Image Styling */
+    .header__content img {
+      width: 90%;
+      height: 80%;
+    }
+
+    /* About Bio Styling */
+    .about__bio {
+      display: inline-block;
+      margin-right: 15px;
+    }
+
+    /* Up Arrow Button Styling */
+    .upArrowBtn {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 99;
+      border: none;
+      outline: none;
+      background-color: #555;
+      color: white;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 50%;
+      font-size: 24px;
+      text-align: center;
+    }
+
+    .upArrowBtn:hover {
+      background-color: #333;
+    }
+
+    /* About Description Styling */
+    .about__description {
+      text-align: justify;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="content-wrapper">
+    <!-- Header Section -->
+    <header class="header header--bg">
+      <div class="container">
+        <nav class="navbar">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar"></div>
+
+          <ul class="navbar-nav">
+            <li><a href="https://bhuvaneshm.in/#about-section">About</a></li>
+            <li><a href="https://bhuvaneshm.in/#skill-section">Skill</a></li>
+            <li><a href="https://bhuvaneshm.in/#award-section">Award</a></li>
+            <li><a href="https://bhuvaneshm.in/app/">App</a></li>
+            <li><a href="https://bhuvaneshm.in/#contact-section">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="text-center" style="color: white;">
+          <h1>© 2025 Bhuvanesh M. All rights reserved.</h1>
+          <br><br><br>
+          <p style="text-align: justify; color: white;">
+            This translator, developed and designed by <a href="https://bhuvaneshm.in" target="_blank" rel="noopener noreferrer" style="color: white; text-decoration: underline;">Bhuvanesh M</a>, 
+            is a proprietary software solution hosted exclusively on 
+            <a href="https://bhuvaneshm.in/translate" target="_blank" rel="noopener noreferrer" style="color: white; text-decoration: underline;">bhuvaneshm.in</a> 
+            . It is a testament to innovation and precision in software engineering, 
+            built to deliver exceptional performance and usability. 
+            As a <a href="https://bhuvaneshm-dev.blogspot.com/2024/11/Close-Sourced-Project.html" target="_blank" rel="noopener noreferrer" style="color: white; text-decoration: underline;"><strong>closed-source project</strong></a>, its codebase and architecture are safeguarded to ensure integrity, security, and originality. 
+            While the software is protected under proprietary rights, individuals are <a href="https://github.com/bhuvanesh-m-dev/Translator" target="_blank " rel="noopener noreferrer" style="color: white; text-decoration: underline;" >welcome to utilize the project for personal purposes,</a> 
+            provided they give due credit to <a href="https://bhuvaneshm.in" target="_blank" rel="noopener noreferrer" style="color: white; text-decoration: underline;">Bhuvanesh M</a> for their efforts and expertise.
+
+        
+            For <strong>business or commercial use</strong>, explicit permission must be obtained from <a href="https://bhuvaneshm.in" target="_blank" rel="noopener noreferrer" style="color: white; text-decoration: underline;">Bhuvanesh M</a>, ensuring compliance with intellectual property laws and maintaining the intended purpose of the software. Unauthorized use, distribution, or modification is strictly prohibited. For inquiries, permissions, or collaborations, interested parties are encouraged to contact <a href="mailto:bhuvaneshm.developer@gmail.com" target="_blank" rel="noopener noreferrer" style="color: white; text-decoration: underline;">bhuvaneshm.developer@gmail.com</a>.
+        </p><br><br><br><br><br><br><br><br>
+            
+        </div>
+        
+
+        <div class="social-icon pull-right">
+          <ul>
+            <li><a href="https://leetcode.com/u/bhuvaneshm_dev/" target="_blank">LeetCode | </a></li>
+            <li><a href="https://www.hackerrank.com/profile/bhuvaneshm_dev" target="_blank">Hackerrank | </a></li>
+            <li><a href="https://github.com/bhuvanesh-m-dev" target="_blank">GitHub | </a></li>
+            <li><a href="https://x.com/bhuvaneshm06" target="_blank">X </a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    
+<!-- Floating LinkedIn Button -->
+<a href="https://www.linkedin.com/in/bhuvaneshm-developer" target="_blank" title="LinkedIn">
+  <img src="img/in.jpg" alt="LinkedIn" style="width: 50px; height: 50px; position: fixed; bottom: 120px; right: 20px; z-index: 1000;">
+</a>
+
+<!-- Floating YouTube Button -->
+<a href="https://www.youtube.com/@bhuvaneshm_dev" target="_blank" title="YouTube">
+  <img src="img/yt.png" alt="YouTube" style="width: 50px; height: 50px; position: fixed; bottom: 70px; right: 20px; z-index: 1000;">
+</a>
+
+<!-- Floating Instagram Button -->
+<a href="https://instagram.com/bhuvaneshm.developer" target="_blank" title="Instagram">
+  <img src="img/insta.png" alt="Instagram" style="width: 75px; height: 50px; position: fixed; bottom: 15px; right: 10px; z-index: 1000;">
+</a>
+
+
+
+   
+
+  </script>
+</body>
+
+</html>
